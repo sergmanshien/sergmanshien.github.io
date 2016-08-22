@@ -1,13 +1,29 @@
 /* This is the custom css for all css changes*/
-footer { margin-bottom: -20px; background-color: #333333; color: #ffffff}
+footer { margin-bottom: -20px; background-color: #000; color: #ffffff}
 
-body {font-size: 22px; font-family: 'Cagliostro', sans-serif;}
+body {font-size: 22px; font-family: 'Cagliostro', sans-serif; background-color: #E6D66C;}
 
 #back-to-top {position: fixed; bottom: 10px; right: 20px; color: #8d8d8d;}
 
+#empty {background-color: #E6D66C;; margin: 0px; padding-top:45px; padding-bottom: 0px; position: relative; z-index: 2;}
+
 #smalr {padding-bottom: 0px;}
 
+#section1 {background-color: #E6D66C;}
+
+#or {top: 50px; right: 15px;}
+
+#mc_embed_signup {top: 110px;}
+
+#mc-embedded-subscribe {font-size: 30px}
+
+.form-control {height: 45px; font-size: 26px;}
+
+.navbar-inverse {background-color: #000;}
+
 .btn-lg {font-size: 32px;}
+
+.contact h3 {font-size: 31px;}
 
 .col-md-3 {padding-left: 90px; padding-top: 20px;}
 
@@ -21,11 +37,12 @@ body {font-size: 22px; font-family: 'Cagliostro', sans-serif;}
 
 .row  {margin: 0px}
 
-.jumbotron {
+.home {
 		text-align: center;
-		background-image: url('../Images/Natural-Botanicals.png');
+		background-image: url('../images/Natural-Botanicals.png');
 		color: white; margin-bottom: 0px;
-		padding-bottom:90px; padding-top: 120px;}
+		padding-bottom:90px; padding-top: 120px;
+		position: relative;z-index: 2;}
 		
 .jumbotron h1 {margin-top: 0px; margin-bottom: 60px;}
 
@@ -37,7 +54,15 @@ ul.nav {font-size: 24px; padding: 10px;}
 
 .navbar-brand {    margin: 0px; font-size: 30px; line-height: 1.3; padding: 7px;}
 
-.homepage {text-align: center; margin-top: 30px; padding-bottom: 20px;}
+.contact {background-color: #333; color: green; margin-bottom: 2px;}
+
+.contact h1 {color: #00b32d; text-align: center; text-transform: uppercase; font-size: 50px; margin-bottom: 35px;}
+
+.contact h2 {text-align: center; padding-top: 15px; margin-top: 30px;}
+
+.contact btn {font-size: 18px;}
+
+.homepage {text-align: center; margin-top: 0px; padding-bottom: 20px;}
 
 	
 .homepage h1, .homepage h2 {text-transform: uppercase;
@@ -46,6 +71,13 @@ ul.nav {font-size: 24px; padding: 10px;}
 .homepage a {color: #00b32d; font-size: 22px;}
 .homepage a:hover {color: #00b32d; text-decoration: none; opacity: .6;}
 .homepage hr {border-color: #00b32d; width: 45%;}
+
+.modal-dialog {position: absolute;
+	left: 50%;
+	margin-left: -300px;
+	top: 50%;
+	margin-top: -168px;
+	width: auto;}
 
 /* Dis is The stylin for smaller screens*/
 @media (max-width: 1199px) 
@@ -68,10 +100,12 @@ ul.nav {font-size: 24px; padding: 10px;}
 			#sma {padding-bottom: 60px;}
 			#smal {padding-bottom: 60px;}
 			#smalr {padding-bottom: 40px;}
-			#nap {text-align: center;}}
+			#nap {text-align: center;}
+			#or {top: 0px; right: 0px;}
+			#mc_embed_signup {top: 0px;}
 
 			@media (max-width: 767px)
-			{body {font-size: 14px;} 
+			{body {font-size: 14px;}	
 			.col-md-9 {padding-left: 30px;}
 			.col-md-9 span {display: block;}
 			.col-md-9 i {padding-left:7px;}
@@ -79,7 +113,7 @@ ul.nav {font-size: 24px; padding: 10px;}
 			.btn-lg {font-size: 19px;}
 			.navbar {min-height:60px;}
 			.navbar-brand {padding: 0px;}
-			.jumbotron {padding-top: 80px; margin-bottom: 15px;}
+			.jumbotron {padding-top: 80px; margin-bottom: 2px;}
 			.jumbotron h1 {font-size:26px; margin-bottom: 26px;}
 			.jumbotron p {font-size: 15px;margin-bottom: 20px;}
 			.homepage h1 {margin-top: 10px; font-size: 24px;}
@@ -93,7 +127,8 @@ ul.nav {font-size: 24px; padding: 10px;}
 			#nap h3 {margin-top: 10px; margin-bottom: 0px;}
 			#sma {padding-bottom: 40px;}
 			#smal {padding-bottom: 40px;}
-			#smalr {padding-bottom: 40px;} }
+			#smalr {padding-bottom: 40px;}
+			#mc-embedded-subscribe {font-size: 20px}}
 			/*need to find a realy big fix for this nav link stuff*/
 			.navbar-inverse .navbar-nav > .active > a{color: #FCA2A2;
 background-color: rgba(5, 164, 96, 0.59);}

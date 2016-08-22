@@ -8,12 +8,12 @@ $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
 
    // animate
    $('html, body').animate({
-       scrollTop: $(hash).offset().top 
+       scrollTop: $(hash).offset().top -50
      }, 700, function(){
 
        // when done, add hash to url
        // (default click behaviour)
-       window.location.hash = hash;
+       window
      });
 
 });
@@ -60,4 +60,4 @@ $("#back-to-top a[href^='#']").on('click', function(e) {
 
 $("#myModal").on('hidden.bs.modal', function (e) {
     $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
-});
+}); 
